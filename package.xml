@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0" packagerversion="1.4.5">
+ <name>Math_Finance</name>
+ <summary>Financial functions</summary>
+ <description>Collection of financial functions for time value of money (annuities), cash flow, interest rate conversions, bonds and depreciation calculations.
+ </description>
+ <maintainers>
+  <maintainer>
+   <user>alejandrop</user>
+   <name>Alejandro Pedraza</name>
+   <email>alejandro.pedraza@dataenlace.com</email>
+   <role>lead</role>
+  </maintainer>
+  </maintainers>
+ <release>
+  <version>1.0.0</version>
+  <date>2006-03-04</date>
+  <license>PHP License</license>
+  <state>stable</state>
+  <notes>- Fixed  futureValue function: wasn&apos;t returning proper values for rate = 0.
+- Fixed TBillEquivalentYield function: was yielding wrong results for periods between half year and a year.
+- Added parameter boundary check for periods function.
+- Fixed some notices in _tvm and _dtvm private functions.
+- Added missing phpdoc parameter documentation for interestPayment and principalPayment functions.
+- Now depends on the Math_Numerical_RootFinding stable release.
+  </notes>
+  <deps>
+   <dep type="pkg" rel="ge" version="1.0.0">Math_Numerical_RootFinding</dep>
+  </deps>
+  <provides type="class" name="Math_Finance" />
+  <provides type="function" name="Math_Finance::effectiveRate" />
+  <provides type="function" name="Math_Finance::nominalRate" />
+  <provides type="function" name="Math_Finance::presentValue" />
+  <provides type="function" name="Math_Finance::futureValue" />
+  <provides type="function" name="Math_Finance::payment" />
+  <provides type="function" name="Math_Finance::periods" />
+  <provides type="function" name="Math_Finance::rate" />
+  <provides type="function" name="Math_Finance::interestPayment" />
+  <provides type="function" name="Math_Finance::principalPayment" />
+  <provides type="function" name="Math_Finance::netPresentValue" />
+  <provides type="function" name="Math_Finance::internalRateOfReturn" />
+  <provides type="function" name="Math_Finance::modifiedInternalRateOfReturn" />
+  <provides type="function" name="Math_Finance::daysDifference" />
+  <provides type="function" name="Math_Finance::daysPerYear" />
+  <provides type="function" name="Math_Finance::TBillYield" />
+  <provides type="function" name="Math_Finance::TBillPrice" />
+  <provides type="function" name="Math_Finance::TBillEquivalentYield" />
+  <provides type="function" name="Math_Finance::discountRate" />
+  <provides type="function" name="Math_Finance::priceDiscount" />
+  <provides type="function" name="Math_Finance::depreciationFixedDeclining" />
+  <provides type="function" name="Math_Finance::depreciationStraightLine" />
+  <provides type="function" name="Math_Finance::depreciationSYD" />
+  <provides type="class" name="Math_Finance_FunctionParameters" />
+  <provides type="function" name="Math_Finance_FunctionParameters::getInstance" />
+  <filelist>
+   <file role="php" baseinstalldir="/Math" md5sum="f36a3072da58194f1225133d9fc75047" name="Finance.php"/>
+   <file role="php" baseinstalldir="/Math" md5sum="e400edccf47e5dd3d084fafa8b858c2c" name="Finance_FunctionParameters.php"/>
+   <file role="test" baseinstalldir="/Math" md5sum="0e6b8280af11616a5cfd7c1e19c80646" name="tests/testMath_Finance.php"/>
+  </filelist>
+ </release>
+ <changelog>
+   <release>
+    <version>1.0.0</version>
+    <date>2006-03-04</date>
+    <state>stable</state>
+    <notes>- Fixed  futureValue function: wasn&apos;t returning proper values for rate = 0.
+- Fixed TBillEquivalentYield function: was yielding wrong results for periods between half year and a year.
+- Added parameter boundary check for periods function.
+- Fixed some notices in _tvm and _dtvm private functions.
+- Added missing phpdoc parameter documentation for interestPayment and principalPayment functions.
+- Now depends on the Math_Numerical_RootFinding stable release.
+    </notes>
+   </release>
+ </changelog>
+</package>
