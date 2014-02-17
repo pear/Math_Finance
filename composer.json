@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "Math_Finance": "./"
+            "Math": "./"
         }
     },
     "description": "More info available on: http://pear.php.net/package/Math_Finance",
@@ -23,7 +23,8 @@
     },
     "type": "library",
     "require": {
-        "pear/pear_exception": "*"
+        "pear/pear_exception": "*",
+        "pear/math_numerical_rootfinding": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
