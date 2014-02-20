@@ -1,0 +1,32 @@
+{
+    "authors": [
+        {
+            "email": "alejandro.pedraza@dataenlace.com",
+            "name": "Alejandro Pedraza",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Math": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/Math_Finance",
+    "include-path": [
+        "./"
+    ],
+    "license": "PHP License",
+    "name": "pear/math_finance",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Math_Finance",
+        "source": "https://github.com/pear/Math_Finance"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*",
+        "pear/math_numerical_rootfinding": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
